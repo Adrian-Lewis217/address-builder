@@ -33,8 +33,6 @@ public class AddressBuilder {
         String shipZip = userInput.nextLine();
         System.out.println();
 
-
-
-
+        public static StringBuilder userAddress
     }
 }
