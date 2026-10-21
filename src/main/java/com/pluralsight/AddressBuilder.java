@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class AddressBuilder {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        StringBuilder addressString = new StringBuilder();
 
         // User full name
         System.out.print("Enter your full name: ");
@@ -33,6 +32,17 @@ public class AddressBuilder {
         String shipZip = userInput.nextLine();
         System.out.println();
 
-        public static StringBuilder userAddress
+        // The StringBuilder
+        StringBuilder addressString = new StringBuilder();
+        addressString.append(billCity).append("\n");
+        addressString.append(billState).append("\n");
+        addressString.append(billStreet).append("\n");
+        addressString.append(billZip).append("\n");
+        addressString.append(shipCity).append("\n");
+        addressString.append(shipState).append("\n");
+        addressString.append(shipStreet).append("\n");
+        addressString.append(shipZip).append("\n");
+
+        System.out.println(addressString);
     }
 }
